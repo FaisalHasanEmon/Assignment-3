@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
+
     <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +25,9 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-bg": "rgb(171, 239, 95)",
+              "btn-navy": "rgb(28, 28, 28)",
+              "clr-gray": "rgb(115, 115, 115)",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -32,11 +36,101 @@
         },
       };
     </script>
+
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/256adcc90b.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="font-manrope">
     <!-- Header -->
-    <header></header>
+    <header class="my-4 md:my-8">
+      <nav class="md:container mx-auto">
+        <div class="flex justify-between md:bg-base-100 lg:px-4 px-2">
+          <!-- Part 1 -->
+          <div>
+            <div class="flex justify-center items-center">
+              <div>
+                <i
+                  class="fa-solid fa-arrow-right-long -rotate-45 bg-primary-bg w-8 h-8 rounded-full text-xl flex justify-center items-center"
+                ></i>
+              </div>
+              <div>
+                <a class="btn btn-ghost text-[2rem] font-extrabold pl-1"
+                  >Rinterio</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Part 2 -->
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-9">
+              <li><a class="font-extrabold">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- Part-3 -->
+          <div class="flex gap-2">
+            <div class="hidden md:block">
+              <div class="flex justify-center items-center space-x-5">
+                <figure
+                  class="border rounded-full p-4 bg-white flex justify-center items-center"
+                >
+                  <img src="./assets/magnifying-glass.png" alt="" />
+                </figure>
+                <figure
+                  class="border rounded-full p-4 bg-white flex justify-center items-center"
+                >
+                  <img src="./assets/shopping-cart-2.png" alt="" />
+                </figure>
+                <a
+                  class="btn bg-primary-bg text-xl font-extrabold rounded-full h-14 w-52"
+                  >Book Consult
+                  <i
+                    class="fa-solid fa-arrow-right-long -rotate-45 bg-btn-navy text-white w-8 h-8 rounded-full text-xl flex justify-center items-center"
+                  ></i
+                ></a>
+              </div>
+            </div>
 
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <div class="relative">
+                <ul
+                  tabindex="0"
+                  class="absolute right-8 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-24 p-2 shadow"
+                >
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- Main -->
     <main></main>
 

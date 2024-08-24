@@ -1,0 +1,5 @@
+<div>
+            <i
+              class="fa-solid fa-arrow-right-long -rotate-45 bg-primary-bg w-8 h-8 rounded-full text-xl flex justify-center items-center"
+            ></i>
+          </div>
