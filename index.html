@@ -32,6 +32,7 @@
               "clr-gray": "rgb(115, 115, 115)",
               "clr-gray-1": "#494949",
               "h-clr": "#212121",
+              "main-bg-clr": "#E9E9E9",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -52,7 +53,7 @@
     <header class="md:container mx-auto my-4 md:my-8">
       <!-- Navbar -->
       <nav>
-        <div class="flex justify-between md:bg-base-100 lg:px-4 px-2">
+        <div class="flex justify-between md:bg-base-100 px-2 lg:px-16">
           <!-- Part 1 -->
           <div>
             <div class="flex justify-center items-center">
@@ -163,7 +164,7 @@
             large windows that flood the space with natural light.
           </p>
           <a
-            class="btn bg-primary-bg-light text-xl font-bold rounded-full h-14 w-full md:w-[210px] text-h-clr mt-[5px] md:mt-[8px]"
+            class="btn bg-primary-bg-light text-xl font-black rounded-full h-14 w-full md:w-[210px] text-h-clr mt-[5px] md:mt-[8px] border border-lime-600"
             >View Details
             <i
               class="fa-solid fa-arrow-right-long -rotate-45 bg-btn-navy text-white w-8 h-8 rounded-full text-xl flex justify-center items-center"
@@ -173,7 +174,76 @@
       </div>
     </header>
     <!-- Main -->
-    <main></main>
+    <main>
+      <section class="bg-main-bg-clr md:container mx-auto my-4 md:my-8">
+        <!-- We Design Section -->
+        <section>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center py-8 md:py-[100px] gap-[37px] px-2 lg:px-16"
+          >
+            <!-- Text Part -->
+            <div
+              class="flex flex-col justify-center items-center md:items-start w-[335px] lg:w-[560px] space-y-4 lg:space-y-[24px] relative"
+            >
+              <img
+                src="./assets/Vector.png"
+                class="hidden lg:block lg:absolute -top-8 -left-14"
+                alt=""
+              />
+              <button
+                class="bg-white rounded-full w-[127px] h-9 text-xs font-bold py-2 px-4 text-h-clr"
+              >
+                <i class="fa-solid fa-arrow-up-long fa-rotate-90 mr-2"></i>About
+                Us
+              </button>
+              <h2
+                class="text-2xl md:text-[40px] md:leading-10 font-black md:font-black text-center md:text-left"
+              >
+                We design thoughtful, liveable spaces
+              </h2>
+              <p
+                class="text-sm md:text-base font-medium text-clr-gray-1 text-center md:text-left"
+              >
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents.
+              </p>
+              <!-- Commercial -->
+              <div
+                class="bg-slate-50 flex justify-start p-[24px] rounded-2xl items-center gap-x-[25px]"
+              >
+                <figure><img src="./assets/commercial.png" alt="" /></figure>
+                <div class="text-clr-gray-1">
+                  <h3 class="text-sm font-extrabold">Commercial</h3>
+                  <p class="text-sm font-medium mt-[10px]">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+              <!-- Residential -->
+              <div
+                class="bg-slate-50 flex justify-start p-[24px] rounded-2xl items-center gap-x-[25px]"
+              >
+                <figure><img src="./assets/residential.png" alt="" /></figure>
+                <div class="text-clr-gray-1">
+                  <h3 class="text-sm font-extrabold">Residential</h3>
+                  <p class="text-sm font-medium mt-[10px]">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Image Part -->
+            <img
+              src="./assets/Rectangle.png"
+              class="max-w-[335px] md:max-w-xl md:max-h-[545px] rounded-lg shadow-2xl"
+            />
+          </div>
+        </section>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer></footer>
