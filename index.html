@@ -24,10 +24,14 @@
         theme: {
           extend: {
             colors: {
+              // Colors
               clifford: "#da373d",
               "primary-bg": "rgb(171, 239, 95)",
+              "primary-bg-light": "#ABEF5F80",
               "btn-navy": "rgb(28, 28, 28)",
               "clr-gray": "rgb(115, 115, 115)",
+              "clr-gray-1": "#494949",
+              "h-clr": "#212121",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -45,8 +49,9 @@
   </head>
   <body class="font-manrope">
     <!-- Header -->
-    <header class="my-4 md:my-8">
-      <nav class="md:container mx-auto">
+    <header class="md:container mx-auto my-4 md:my-8">
+      <!-- Navbar -->
+      <nav>
         <div class="flex justify-between md:bg-base-100 lg:px-4 px-2">
           <!-- Part 1 -->
           <div>
@@ -57,7 +62,8 @@
                 ></i>
               </div>
               <div>
-                <a class="btn btn-ghost text-[2rem] font-extrabold pl-1"
+                <a
+                  class="btn btn-ghost text-[2rem] font-extrabold pl-1 text-h-clr"
                   >Rinterio</a
                 >
               </div>
@@ -66,7 +72,7 @@
           <!-- Part 2 -->
           <div class="hidden lg:flex">
             <ul class="menu menu-horizontal px-1 space-x-9">
-              <li><a class="font-extrabold">Home</a></li>
+              <li><a class="font-extrabold text-h-clr">Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
@@ -117,19 +123,54 @@
               <div class="relative">
                 <ul
                   tabindex="0"
-                  class="absolute right-8 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-24 p-2 shadow"
+                  class="absolute right-4 menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-32 p-2 shadow"
                 >
-                  <li><a>Home</a></li>
+                  <li><a class="font-extrabold text-h-clr">Home</a></li>
                   <li><a>Services</a></li>
                   <li><a>Portfolio</a></li>
                   <li><a>Blogs</a></li>
-                  <li><a>Contact</a></li>
+                  <li><a>Contact Us</a></li>
+                  <li><a>Add to Cart</a></li>
+                  <li><a>Search</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </nav>
+      <!-- Hero Section -->
+      <div
+        class="my-14 space-y-4 md:space-y-6 flex flex-col justify-center items-center"
+      >
+        <!-- Image -->
+        <figure class="flex justify-center items-center">
+          <img class="w-4/5 md:w-[571px]" src="./assets/banner.png" alt="" />
+        </figure>
+        <!-- Text -->
+        <div
+          class="w-[335px] md:w-[1170px] space-y-4 md:space-y-6 text-center flex flex-col justify-center items-center"
+        >
+          <h2
+            class="text-[28px] leading-8 lg:text-6xl font-extrabold text-h-clr"
+          >
+            A barn house of this design has a striking appearance
+          </h2>
+          <p
+            class="md:w-[566px] lg:w-[972px] text-clr-gray-1 text-[14px] md:text-base font-medium leading-6 mb-4"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <a
+            class="btn bg-primary-bg-light text-xl font-bold rounded-full h-14 w-full md:w-[210px] text-h-clr mt-[5px] md:mt-[8px]"
+            >View Details
+            <i
+              class="fa-solid fa-arrow-right-long -rotate-45 bg-btn-navy text-white w-8 h-8 rounded-full text-xl flex justify-center items-center"
+            ></i
+          ></a>
+        </div>
+      </div>
     </header>
     <!-- Main -->
     <main></main>
