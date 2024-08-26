@@ -19,12 +19,6 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .manrope-sr {
-        font-family: "Manrope";
-        font-optical-sizing: auto;
-      }
-    </style>
     <script>
       tailwind.config = {
         theme: {
@@ -48,9 +42,9 @@
               "footer-bg": "#1C1C1C",
               "footer-text": "#737373",
             },
-            // fontFamily: {
-            //   manrope: ["Manrope", "sans-serif"],
-            // },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
             backgroundImage: {
               "footer-img": "url('assets/bg.jpg')",
             },
@@ -65,7 +59,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="manrope-sr">
+  <body class="font-manrope">
     <!-- Header -->
     <header class="md:container mx-auto my-4 lg:my-8">
       <!-- Navbar -->
