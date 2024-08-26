@@ -49,6 +49,9 @@
             // fontFamily: {
             //   manrope: ["Manrope", "sans-serif"],
             // },
+            backgroundImage: {
+              "footer-img": "url('assets/bg.jpg')",
+            },
           },
         },
       };
@@ -177,7 +180,7 @@
             A barn house of this design has a striking appearance
           </h2>
           <p
-            class="lg:w-[566px] lg:w-[972px] text-clr-gray-1 text-[14px] lg:text-base font-medium leading-6 mb-4"
+            class="md:w-[566px] lg:w-[972px] text-clr-gray-1 text-[14px] lg:text-base font-medium leading-6 mb-4"
           >
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents, and
@@ -468,6 +471,89 @@
     </main>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+      <!-- Contact Section -->
+      <section class="bg-footer-img bg-cover bg-no-repeat">
+        <div class="py-28 max-w-[327px] lg:max-w-[970px] mx-auto">
+          <div class="flex flex-col justify-center items-center mx-auto">
+            <button
+              class="hover:border-2 hover:border-stone-600 bg-light-green-bg rounded-full w-[198px] h-9 text-xs font-bold py-2 px-4 text-h-clr"
+            >
+              <i class="fa-solid fa-arrow-up-long fa-rotate-90 mr-2"></i>Let's
+              Connect
+            </button>
+            <h2
+              class="mt-4 mb-6 text-2xl lg:text-[40px] text-h-cler lg:leading-10 font-bold text-center"
+            >
+              Let's Discuss Our Next Project
+            </h2>
+            <p
+              class="text-sm lg:text-base font-medium text-clr-gray-1 text-center lg:w-[678px]"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+          </div>
+          <div class="mt-8">
+            <form action="#">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-5 lg:gap-6"
+              >
+                <label for="fname"
+                  ><input
+                    type="text"
+                    name="fname"
+                    placeholder="First Name*"
+                    required
+                    class="px-5 py-4 lg:px-5 mx-auto rounded-full block placeholder:text-base placeholder:font-medium w-full h-14 lg:w-[473px] lg:h-[62px]"
+                /></label>
+                <label for="lname"
+                  ><input
+                    type="text"
+                    name="lname"
+                    placeholder="Last Name*"
+                    required
+                    class="px-5 py-4 lg:px-5 mx-auto rounded-full block placeholder:text-base placeholder:font-medium w-full h-14 lg:w-[473px] lg:h-[62px]"
+                /></label>
+
+                <label fot="phone"
+                  ><input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number*"
+                    required
+                    class="px-5 py-4 lg:px-5 mx-auto rounded-full block placeholder:text-base placeholder:font-medium w-full h-14 lg:w-[473px] lg:h-[62px]"
+                /></label>
+                <label for="mail"
+                  ><input
+                    type="email"
+                    name="mail"
+                    placeholder="Email Address*"
+                    required
+                    class="px-5 py-4 lg:px-5 mx-auto rounded-full block placeholder:text-base placeholder:font-medium w-full h-14 lg:w-[473px] lg:h-[62px]"
+                /></label>
+              </div>
+
+              <label for="message">
+                <textarea
+                  name="message"
+                  placeholder="Write your message here"
+                  required
+                  class="h-60 resize-none placeholder:text-base placeholder:font-medium w-full my-6 rounded-[32px] p-5"
+                ></textarea>
+              </label>
+              <a
+                class="btn flex justify-center items-center gap-2 bg-primary-bg text-xl font-extrabold rounded-full h-14 w-full p-3"
+                >Send Mail
+                <i
+                  class="fa-solid fa-arrow-right-long -rotate-45 bg-btn-navy text-white w-8 h-8 rounded-full text-xl flex justify-center items-center"
+                ></i
+              ></a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
